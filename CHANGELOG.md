@@ -2,7 +2,16 @@
 
 ## [Unreleased](https://github.com/buluma/ansible-role-buildkit/tree/HEAD)
 
-[Full Changelog](https://github.com/buluma/ansible-role-buildkit/compare/0a4a085d526fe29ed2e314dbb12a5b80f2534fc2...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-buildkit/compare/v0.1.0...HEAD)
+
+**Closed issues:**
+
+- Update action [\#2](https://github.com/buluma/ansible-role-buildkit/issues/2)
+- rebuild action [\#1](https://github.com/buluma/ansible-role-buildkit/issues/1)
+
+## [v0.1.0](https://github.com/buluma/ansible-role-buildkit/tree/v0.1.0) (2024-01-22)
+
+[Full Changelog](https://github.com/buluma/ansible-role-buildkit/compare/0a4a085d526fe29ed2e314dbb12a5b80f2534fc2...v0.1.0)
 
 **Closed issues:**
 
