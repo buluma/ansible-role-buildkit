@@ -8,3 +8,8 @@
     - name: Example assertion
       ansible.builtin.assert:
         that: true
+    - command: /usr/local/bin/buildctl --version
+      register: buildkit_test_output
+    - name: buildctl --version
+      debug:
+        msg: '{{ buildkit_test_output.stdout }}'

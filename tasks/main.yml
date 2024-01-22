@@ -22,11 +22,11 @@
 
 - name: Debug buildkit_binary
   ansible.builtin.debug:
-    msg: '{{ buildkit_binary.stat }}'
+    msg: '{{ buildkit_binary }}'
   when: buildkit_binary.stat is defined
 
 - name: Not buildkit_binary.stat.exists
-  when: Not '{{ buildkit_binary.stat.exists }}'
+  when: not buildkit_binary.stat.exists
   block:
     - name: Downloading '{{ buildkit_url }}'...
       become: true
