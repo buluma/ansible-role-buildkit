@@ -21,11 +21,14 @@
   changed_when: false
 
 - name: Debug buildkit_binary
-  msg: buildkit_binary
+  ansible.builtin.debug:
+    msg: '{{ buildkit_binary.stat }}'
+  when: buildkit_binary.stat is defined
 
 - name: Not buildkit_binary.stat.exists
+  when: Not '{{ buildkit_binary.stat.exists }}'
   block:
-    - name: Downloading {{ buildkit_url }}...
+    - name: Downloading '{{ buildkit_url }}'...
       become: true
       become_user: root
       ansible.builtin.get_url:
@@ -33,7 +36,7 @@
         dest: '{{ buildkit_tmp_archive }}'
         checksum: '{{ buildkit_checksum }}'
         mode: 0644
-    - name: Mkdir -p {{ buildkit_install_dir }}
+    - name: Mkdir -p '{{ buildkit_install_dir }}'
       become: true
       become_user: root
       ansible.builtin.file:
