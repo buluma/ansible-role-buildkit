@@ -1,15 +1,12 @@
 ---
-# This is an example playbook to execute Ansible tests.
-
 - name: Verify
   hosts: all
   gather_facts: false
   tasks:
-    - name: Example assertion
-      ansible.builtin.assert:
-        that: true
-    - command: /usr/local/bin/buildctl --version
+    - name: Check buildkit version
+      ansible.builtin.command: /usr/local/bin/buildctl --version
       register: buildkit_test_output
-    - name: buildctl --version
-      debug:
+
+    - name: Print buildctl --version
+      ansible.builtin.debug:
         msg: '{{ buildkit_test_output.stdout }}'

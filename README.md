@@ -14,7 +14,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 ---
 - name: Converge
   hosts: all
-  gather_facts: false
+  gather_facts: true
   tasks:
     - name: "Include buluma.buildkit"
       ansible.builtin.include_role:
@@ -490,6 +490,13 @@ buildkit_checksums:
 
 - pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-buildkit/blob/master/requirements.txt).
 
+## [State of used roles](#state-of-used-roles)
+
+The following roles are used to prepare a system. You can prepare your system in another way.
+
+| Requirement | GitHub | Version |
+|-------------|--------|--------|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Ansible Molecule](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bootstrap.svg)](https://github.com/shadowwalker/ansible-role-bootstrap)|
 
 ## [Context](#context)
 
@@ -506,7 +513,6 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |container|tags|
 |---------|----|
 |[Alpine](https://hub.docker.com/repository/docker/buluma/alpine/general)|all|
-|[Archlinux](https://hub.docker.com/repository/docker/buluma/archlinux/general)|all|
 |[Debian](https://hub.docker.com/repository/docker/buluma/debian/general)|bookworm, bullseye|
 |[EL](https://hub.docker.com/repository/docker/buluma/enterpriselinux/general)|8, 9|
 |[Fedora](https://hub.docker.com/repository/docker/buluma/fedora/general)|38, 39|
@@ -526,9 +532,8 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [License](#license)
 
-[MIT](https://github.com/buluma/ansible-role-buildkit/blob/master/LICENSE)
+[Apache-2.0](https://github.com/buluma/ansible-role-buildkit/blob/master/LICENSE)
 
 ## [Author Information](#author-information)
 
 [Shadow Walker](https://buluma.github.io/)
-
