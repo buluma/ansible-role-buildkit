@@ -20,7 +20,10 @@
   register: buildkit_binary
   changed_when: false
 
-- when: Not buildkit_binary.stat.exists
+- name: Debug buildkit_binary
+  msg: buildkit_binary
+
+- name: Not buildkit_binary.stat.exists
   block:
     - name: Downloading {{ buildkit_url }}...
       become: true
