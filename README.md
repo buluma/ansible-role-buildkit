@@ -26,39 +26,14 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 ```yaml
 ---
 - name: Prepare
-  hosts: localhost
-  connection: local
-  gather_facts: false
-  no_log: "{{ molecule_no_log }}"
-  tasks:
+  hosts: all
+  become: yes
+  gather_facts: no
 
-    # TODO: Developer must implement and populate 'server' variable
-
-    - when: server.changed | default(false) | bool
-      block:
-        - name: Populate instance config dict
-          ansible.builtin.set_fact:
-            instance_conf_dict: {
-              'instance': "{{ }}",
-              'address': "{{ }}",
-              'user': "{{ }}",
-              'port': "{{ }}",
-              'identity_file': "{{ }}", }
-          with_items: "{{ server.results }}"
-          register: instance_config_dict
-
-        - name: Convert instance config dict to a list
-          ansible.builtin.set_fact:
-            instance_conf: "{{ instance_config_dict.results | map(attribute='ansible_facts.instance_conf_dict') | list }}"
-
-        - name: Dump instance config
-          ansible.builtin.copy:
-            content: |
-              # Molecule managed
-
-              {{ instance_conf | to_json | from_json | to_yaml }}
-            dest: "{{ molecule_instance_config }}"
-            mode: 0600
+  roles:
+    - role: buluma.bootstrap
+    - role: buluma.ca_certificates
+    - role: andrewrothstein.unarchivedeps
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -497,6 +472,8 @@ The following roles are used to prepare a system. You can prepare your system in
 | Requirement | GitHub | Version |
 |-------------|--------|--------|
 |[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Ansible Molecule](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bootstrap.svg)](https://github.com/shadowwalker/ansible-role-bootstrap)|
+|[buluma.ca_certificates](https://galaxy.ansible.com/buluma/ca_certificates)|[![Ansible Molecule](https://github.com/buluma/ansible-role-ca_certificates/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-ca_certificates/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-ca_certificates.svg)](https://github.com/shadowwalker/ansible-role-ca_certificates)|
+|[andrewrothstein.unarchivedeps](https://galaxy.ansible.com/buluma/andrewrothstein.unarchivedeps)|[![Ansible Molecule](https://github.com/buluma/andrewrothstein.unarchivedeps/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/andrewrothstein.unarchivedeps/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/andrewrothstein.unarchivedeps.svg)](https://github.com/shadowwalker/andrewrothstein.unarchivedeps)|
 
 ## [Context](#context)
 
@@ -537,3 +514,4 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 ## [Author Information](#author-information)
 
 [Shadow Walker](https://buluma.github.io/)
+
