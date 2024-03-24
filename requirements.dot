@@ -1,0 +1,13 @@
+digraph PhiloDilemma {
+  label = "Michael Buluma" ;
+  overlap=false
+  {
+    "buildkit" [fillcolor=yellow style=filled penwidth=3]
+    "buluma.bootstrap" [fillcolor=green style=filled]
+    "buluma.ca_certificates" [fillcolor=green style=filled]
+    "andrewrothstein.unarchivedeps" [fillcolor=green style=filled]
+  }
+  "buildkit" -> "buluma.bootstrap"
+  "buildkit" -> "buluma.ca_certificates"
+  "buildkit" -> "andrewrothstein.unarchivedeps"
+}
