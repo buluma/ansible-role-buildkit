@@ -27,8 +27,8 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 ---
 - name: Prepare
   hosts: all
-  become: yes
-  gather_facts: no
+  become: true
+  gather_facts: false
 
   roles:
     - role: buluma.bootstrap
@@ -45,8 +45,8 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 ```yaml
 ---
 # defaults file for buildkit
-buildkit_ver: 0.12.4
-buildkit_mirror: https://github.com/moby/buildkit/releases/download
+buildkit_ver: "0.12.4"
+buildkit_mirror: "https://github.com/moby/buildkit/releases/download"
 buildkit_arch_map:
   aarch64: arm64
   arm64: arm64
