@@ -1,7 +1,7 @@
 ---
 # defaults file for buildkit
-buildkit_ver: 0.12.4
-buildkit_mirror: https://github.com/moby/buildkit/releases/download
+buildkit_ver: "0.12.4"
+buildkit_mirror: "https://github.com/moby/buildkit/releases/download"
 buildkit_arch_map:
   aarch64: arm64
   arm64: arm64
