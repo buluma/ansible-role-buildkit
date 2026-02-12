@@ -5,4 +5,4 @@
 repository:
   description: Install and Configure buildkit on your system.
   homepage: https://buluma.github.io/
-  topics: development, ansible, molecule, tox, playbook
+  topics: development, ansible, molecule, playbook

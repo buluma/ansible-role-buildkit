@@ -1,10 +1,10 @@
-# Ansible role [buildkit](https://galaxy.ansible.com/ui/standalone/roles/buluma/buildkit/documentation)
+# [Ansible role buildkit](#ansible-role-buildkit)
 
 Install and Configure buildkit on your system.
 
-|GitHub|Version|Issues|Pull Requests|Downloads|
-|------|-------|------|-------------|---------|
-|[![github](https://github.com/buluma/ansible-role-buildkit/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-buildkit/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-buildkit.svg)](https://github.com/buluma/ansible-role-buildkit/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-buildkit.svg)](https://github.com/buluma/ansible-role-buildkit/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-buildkit.svg)](https://github.com/buluma/ansible-role-buildkit/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/buildkit)](https://galaxy.ansible.com/ui/standalone/roles/buluma/buildkit/documentation)|
+|GitHub|GitLab|Downloads|Version|
+|------|------|---------|-------|
+|[![github](https://github.com/buluma/ansible-role-buildkit/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-buildkit/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-buildkit/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-buildkit)|[![downloads](https://img.shields.io/ansible/role/d/buluma/buildkit)](https://galaxy.ansible.com/buluma/buildkit)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-buildkit.svg)](https://github.com/buluma/ansible-role-buildkit/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -16,9 +16,9 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   hosts: all
   gather_facts: true
   tasks:
-    - name: "Include buluma.buildkit"
+    - name: "Include ansible-role-buildkit"
       ansible.builtin.include_role:
-        name: "buluma.buildkit"
+        name: "ansible-role-buildkit"
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-buildkit/blob/master/molecule/default/prepare.yml):
@@ -469,18 +469,17 @@ buildkit_checksums:
 
 The following roles are used to prepare a system. You can prepare your system in another way.
 
-| Requirement | GitHub | Version |
+| Requirement | GitHub | GitLab |
 |-------------|--------|--------|
-|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Ansible Molecule](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bootstrap.svg)](https://github.com/shadowwalker/ansible-role-bootstrap)|
-|[buluma.ca_certificates](https://galaxy.ansible.com/buluma/ca_certificates)|[![Ansible Molecule](https://github.com/buluma/ansible-role-ca_certificates/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-ca_certificates/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-ca_certificates.svg)](https://github.com/shadowwalker/ansible-role-ca_certificates)|
-|[andrewrothstein.unarchivedeps](https://galaxy.ansible.com/buluma/andrewrothstein.unarchivedeps)|[![Ansible Molecule](https://github.com/buluma/andrewrothstein.unarchivedeps/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/andrewrothstein.unarchivedeps/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/andrewrothstein.unarchivedeps.svg)](https://github.com/shadowwalker/andrewrothstein.unarchivedeps)|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-bootstrap)|
+|[buluma.ca_certificates](https://galaxy.ansible.com/buluma/ca_certificates)|[![Build Status GitHub](https://github.com/buluma/ansible-role-ca_certificates/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-ca_certificates/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-ca_certificates/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-ca_certificates)|
+|[andrewrothstein.unarchivedeps](https://galaxy.ansible.com/buluma/andrewrothstein.unarchivedeps)|[![Build Status GitHub](https://github.com/buluma/andrewrothstein.unarchivedeps/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/andrewrothstein.unarchivedeps/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/andrewrothstein.unarchivedeps/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/andrewrothstein.unarchivedeps)|
 
 ## [Context](#context)
 
-This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.github.io/) for further information.
+This role is part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.github.io/) for further information.
 
 Here is an overview of related roles:
-
 ![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-buildkit/png/requirements.png "Dependencies")
 
 ## [Compatibility](#compatibility)
@@ -490,27 +489,24 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |container|tags|
 |---------|----|
 |[Alpine](https://hub.docker.com/r/buluma/alpine)|all|
-|[Debian](https://hub.docker.com/r/buluma/debian)|bookworm, bullseye|
-|[EL](https://hub.docker.com/r/buluma/enterpriselinux)|8, 9|
-|[Fedora](https://hub.docker.com/r/buluma/fedora)|38, 39|
-|[Ubuntu](https://hub.docker.com/r/buluma/ubuntu)|focal, jammy|
+|[Debian](https://hub.docker.com/r/buluma/debian)|all|
+|[EL](https://hub.docker.com/r/buluma/enterpriselinux)|all|
+|[Fedora](https://hub.docker.com/r/buluma/fedora)|all|
+|[Ubuntu](https://hub.docker.com/r/buluma/ubuntu)|all|
 
-The minimum version of Ansible required is 2.12, tests have been done to:
+The minimum version of Ansible required is 2.12, tests have been done on:
 
 - The previous version.
 - The current version.
 - The development version.
 
-If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-buildkit/issues)
-
-## [Changelog](#changelog)
-
-[Role History](https://github.com/buluma/ansible-role-buildkit/blob/master/CHANGELOG.md)
+If you find issues, please register them on [GitHub](https://github.com/buluma/ansible-role-buildkit/issues).
 
 ## [License](#license)
 
-[Apache-2.0](https://github.com/buluma/ansible-role-buildkit/blob/master/LICENSE)
+[Apache-2.0](https://github.com/buluma/ansible-role-buildkit/blob/master/LICENSE).
 
 ## [Author Information](#author-information)
 
-[Shadow Walker](https://buluma.github.io/)
+[buluma](https://buluma.github.io/)
+
