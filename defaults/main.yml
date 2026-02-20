@@ -26,7 +26,7 @@ buildkit_apps:
   - buildkit-runc
 
 buildkit_checksums:
-  '0.8.3':
+  "0.8.3":
     # https://github.com/moby/buildkit/releases/download/v0.8.3/buildkit-v0.8.3.darwin-amd64.tar.gz
     darwin-amd64: sha256:31469477bc8feaa9f6d7a3ebbad732a1973ec7c2b76bba0cc8941687a0b401d0
     # https://github.com/moby/buildkit/releases/download/v0.8.3/buildkit-v0.8.3.linux-amd64.tar.gz
@@ -41,7 +41,7 @@ buildkit_checksums:
     linux-s390x: sha256:11bbc051d161e51c862f6d351625d27831229a3e20be7e138fa8eaf3711000c8
     # https://github.com/moby/buildkit/releases/download/v0.8.3/buildkit-v0.8.3.windows-amd64.zip
     windows-amd64: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-  '0.9.0':
+  "0.9.0":
     # https://github.com/moby/buildkit/releases/download/v0.9.0/buildkit-v0.9.0.darwin-amd64.tar.gz
     darwin-amd64: sha256:4212f97475317f50d2721924c388c35b7a451ad20b4382997bd4e6870eff1095
     # https://github.com/moby/buildkit/releases/download/v0.9.0/buildkit-v0.9.0.linux-amd64.tar.gz
@@ -56,7 +56,7 @@ buildkit_checksums:
     linux-s390x: sha256:cc283531ae650b112e60107e28b75443a01edc88968996d5bafecf9769f4333e
     # https://github.com/moby/buildkit/releases/download/v0.9.0/buildkit-v0.9.0.windows-amd64.zip
     windows-amd64: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-  '0.9.1':
+  "0.9.1":
     # https://github.com/moby/buildkit/releases/download/v0.9.1/buildkit-v0.9.1.darwin-amd64.tar.gz
     darwin-amd64: sha256:488148cb50b25595436ce6ef535bbf98ba1d0eb5eeb53c5cf94aea88a811a308
     # https://github.com/moby/buildkit/releases/download/v0.9.1/buildkit-v0.9.1.linux-amd64.tar.gz
@@ -71,7 +71,7 @@ buildkit_checksums:
     linux-s390x: sha256:6db7d286927e99b2cdf081d43bd9f0f02c3df14a5891cb3666d3daaacb277cb6
     # https://github.com/moby/buildkit/releases/download/v0.9.1/buildkit-v0.9.1.windows-amd64.zip
     windows-amd64: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-  '0.9.2':
+  "0.9.2":
     # https://github.com/moby/buildkit/releases/download/v0.9.2/buildkit-v0.9.2.darwin-amd64.tar.gz
     darwin-amd64: sha256:b5c20bc6a4ff553a2829249e08938ebb54dd1c986bb082f2b8fc234102a813f8
     # https://github.com/moby/buildkit/releases/download/v0.9.2/buildkit-v0.9.2.linux-amd64.tar.gz
@@ -84,7 +84,7 @@ buildkit_checksums:
     linux-ppc64le: sha256:bb22dca8c9c833dca8f72732b42d09dde5144dd86bb219d86781628682114746
     # https://github.com/moby/buildkit/releases/download/v0.9.2/buildkit-v0.9.2.linux-s390x.tar.gz
     linux-s390x: sha256:3eaa45c988499aa305b7b2238c05587861b8007901b7c9ffcfee749cd1da1e81
-  '0.9.3':
+  "0.9.3":
     # https://github.com/moby/buildkit/releases/download/v0.9.3/buildkit-v0.9.3.darwin-amd64.tar.gz
     darwin-amd64: sha256:0f5e72298682529a35c16256b192b56faeac2b4cc5786998fa55eebe9335e677
     # https://github.com/moby/buildkit/releases/download/v0.9.3/buildkit-v0.9.3.linux-amd64.tar.gz
@@ -99,7 +99,7 @@ buildkit_checksums:
     linux-s390x: sha256:156bdc7282f07848257d464f39c0665334246ce7e57d82d02048f85883fa8018
     # https://github.com/moby/buildkit/releases/download/v0.9.3/buildkit-v0.9.3.windows-amd64.zip
     windows-amd64: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-  '0.10.0':
+  "0.10.0":
     # https://github.com/moby/buildkit/releases/download/v0.10.0/buildkit-v0.10.0.darwin-amd64.tar.gz
     darwin-amd64: sha256:f80a3726d1ad662e573b9eab5a00cb82b07ab44ea5ba871a755f64fff41fe9c5
     # https://github.com/moby/buildkit/releases/download/v0.10.0/buildkit-v0.10.0.darwin-arm64.tar.gz
@@ -120,7 +120,7 @@ buildkit_checksums:
     windows-amd64: sha256:0f6a272e9cf40e499d4d9d9a21b41bb5ad3393cb3406c1bf76e36f5e9a3942ef
     # https://github.com/moby/buildkit/releases/download/v0.10.0/buildkit-v0.10.0.windows-arm64.tar.gz
     windows-arm64: sha256:237e79fb684f8a40b92b3a721ab79a19f452dff451bf5f23cf0865e296985035
-  '0.10.1':
+  "0.10.1":
     # https://github.com/moby/buildkit/releases/download/v0.10.1/buildkit-v0.10.1.darwin-amd64.tar.gz
     darwin-amd64: sha256:19fe16ea13605295d21b9a6d4d206bebfb7cc0bd4463ed75eeaee178ff443fe7
     # https://github.com/moby/buildkit/releases/download/v0.10.1/buildkit-v0.10.1.darwin-arm64.tar.gz
@@ -141,7 +141,7 @@ buildkit_checksums:
     windows-amd64: sha256:fe85d744ed6fa03dd038cee1d74288b73cbdfd5d3b96795ae35783c1294b0bb3
     # https://github.com/moby/buildkit/releases/download/v0.10.1/buildkit-v0.10.1.windows-arm64.tar.gz
     windows-arm64: sha256:ca58d47c4ba2856ae61a265db369e39d0cd788d6e144bbc6622cfef270469895
-  '0.10.2':
+  "0.10.2":
     # https://github.com/moby/buildkit/releases/download/v0.10.2/buildkit-v0.10.2.darwin-amd64.tar.gz
     darwin-amd64: sha256:f3739f67366e0f42e59491201a645263985206dda0e9e09bf626443b9ac4b9b1
     # https://github.com/moby/buildkit/releases/download/v0.10.2/buildkit-v0.10.2.darwin-arm64.tar.gz
@@ -162,7 +162,7 @@ buildkit_checksums:
     windows-amd64: sha256:274dd34ba0f79fb6c6d0089f1f6a593603e5e7224d203447c5e94a478d2a8020
     # https://github.com/moby/buildkit/releases/download/v0.10.2/buildkit-v0.10.2.windows-arm64.tar.gz
     windows-arm64: sha256:ab879ea3ebcf86d88cf8bf72f61c69cef00c9ad5be36de49e51cd9da156d8c38
-  '0.10.3':
+  "0.10.3":
     # https://github.com/moby/buildkit/releases/download/v0.10.3/buildkit-v0.10.3.darwin-amd64.tar.gz
     darwin-amd64: sha256:180c77274251ef9c1a287a5e24a441acdb7634f7f59cb9e2cb9851852fed97b8
     # https://github.com/moby/buildkit/releases/download/v0.10.3/buildkit-v0.10.3.darwin-arm64.tar.gz
@@ -183,7 +183,7 @@ buildkit_checksums:
     windows-amd64: sha256:0e6bab044aec84959842c00f09c5ca5ec6ccf642167082849e2d7a2fe4856553
     # https://github.com/moby/buildkit/releases/download/v0.10.3/buildkit-v0.10.3.windows-arm64.tar.gz
     windows-arm64: sha256:b269b2440d397faf201078e31ef1d52020ea358d6a3a053da8d938eca05300ab
-  '0.10.4':
+  "0.10.4":
     # https://github.com/moby/buildkit/releases/download/v0.10.4/buildkit-v0.10.4.darwin-amd64.tar.gz
     darwin-amd64: sha256:7e93848b9fe1776ca264a2f4a402ad01186f73bfe4ca59e279fb5190c11ed1c0
     # https://github.com/moby/buildkit/releases/download/v0.10.4/buildkit-v0.10.4.darwin-arm64.tar.gz
@@ -204,7 +204,7 @@ buildkit_checksums:
     windows-amd64: sha256:ff3ebebe3f2b85bd5d33273455ff23375a1bb8048804af7c54cd8a21777a0008
     # https://github.com/moby/buildkit/releases/download/v0.10.4/buildkit-v0.10.4.windows-arm64.tar.gz
     windows-arm64: sha256:0d46d81def55874cd3eb07221e299cef738b1c4527ce570fe1abdc5cfbca4225
-  '0.10.5':
+  "0.10.5":
     # https://github.com/moby/buildkit/releases/download/v0.10.5/buildkit-v0.10.5.darwin-amd64.tar.gz
     darwin-amd64: sha256:182fe8841a4c225aa22f70f6fc9f2dc360194b588ee32b376acecc394062c3a9
     # https://github.com/moby/buildkit/releases/download/v0.10.5/buildkit-v0.10.5.darwin-arm64.tar.gz
@@ -225,7 +225,7 @@ buildkit_checksums:
     windows-amd64: sha256:2d837557730cee6a2287f6905a6ebb88a31598a7b993a3bebf4471b8e35b13e0
     # https://github.com/moby/buildkit/releases/download/v0.10.5/buildkit-v0.10.5.windows-arm64.tar.gz
     windows-arm64: sha256:bbec3733f06a11cc2e31bc942b271c66417e958c7a465d26a01462e0848fd90c
-  '0.10.6':
+  "0.10.6":
     # https://github.com/moby/buildkit/releases/download/v0.10.6/buildkit-v0.10.6.darwin-amd64.tar.gz
     darwin-amd64: sha256:3ffcb3910b337ce74868c36f1fef6ef4c0b32f7f16f54e9acd004ce2f3ae5bd2
     # https://github.com/moby/buildkit/releases/download/v0.10.6/buildkit-v0.10.6.darwin-arm64.tar.gz
@@ -246,7 +246,7 @@ buildkit_checksums:
     windows-amd64: sha256:6095f8f8fab13f3c9cb1df4c63e4160cd092041d70358a9ee2b56db95bd7d1ef
     # https://github.com/moby/buildkit/releases/download/v0.10.6/buildkit-v0.10.6.windows-arm64.tar.gz
     windows-arm64: sha256:12501809a28efd244c1b465fca29ad96e22e35dcb4a9951242d3712375f78c46
-  '0.11.0':
+  "0.11.0":
     # https://github.com/moby/buildkit/releases/download/v0.11.0/buildkit-v0.11.0.darwin-amd64.tar.gz
     darwin-amd64: sha256:35090b0fbcaee922e52a0860a45be2b2484299df5242e70546fc6599c7c5cf86
     # https://github.com/moby/buildkit/releases/download/v0.11.0/buildkit-v0.11.0.darwin-arm64.tar.gz
@@ -267,7 +267,7 @@ buildkit_checksums:
     windows-amd64: sha256:2cbc8c90a53ce47d9f2157d57d483af7c04701c3408893856432b2a7492a1505
     # https://github.com/moby/buildkit/releases/download/v0.11.0/buildkit-v0.11.0.windows-arm64.tar.gz
     windows-arm64: sha256:3c0fdcdad49251e6ab840983d2e62b064e4712d4078875ae193ddfbe85c7f084
-  '0.11.1':
+  "0.11.1":
     # https://github.com/moby/buildkit/releases/download/v0.11.1/buildkit-v0.11.1.darwin-amd64.tar.gz
     darwin-amd64: sha256:bdf0aec8ce655a1075ab5708a0e2b44b69615673c07337e8b62e501a6f8547ed
     # https://github.com/moby/buildkit/releases/download/v0.11.1/buildkit-v0.11.1.darwin-arm64.tar.gz
@@ -288,7 +288,7 @@ buildkit_checksums:
     windows-amd64: sha256:11eebbef33011fcb0a3607199679914d1ed39f1400fb86116ec4ab12fdfb7546
     # https://github.com/moby/buildkit/releases/download/v0.11.1/buildkit-v0.11.1.windows-arm64.tar.gz
     windows-arm64: sha256:00b333297c3fbb4e6c66d89099990237a43c3f895d24e507f9fff89bced5ad39
-  '0.11.2':
+  "0.11.2":
     # https://github.com/moby/buildkit/releases/download/v0.11.2/buildkit-v0.11.2.darwin-amd64.tar.gz
     darwin-amd64: sha256:bf0f536f8ec775392ed7542acaf5390496e6d931df6758a17f341d595e0c7691
     # https://github.com/moby/buildkit/releases/download/v0.11.2/buildkit-v0.11.2.darwin-arm64.tar.gz
@@ -309,7 +309,7 @@ buildkit_checksums:
     windows-amd64: sha256:209adb8c0b9799b3591c596b9fdb0297cd0c1db3e1d829e109a0cefd39138c34
     # https://github.com/moby/buildkit/releases/download/v0.11.2/buildkit-v0.11.2.windows-arm64.tar.gz
     windows-arm64: sha256:f33e9a06c4a47d3e239fa1fd350ad714b3515e690642000eced0b1b0e344f079
-  '0.11.3':
+  "0.11.3":
     # https://github.com/moby/buildkit/releases/download/v0.11.3/buildkit-v0.11.3.darwin-amd64.tar.gz
     darwin-amd64: sha256:cc87d6ee6d8e2f1b110124e2548b29efebd85b4759cd8b3f9c2e87d1c6a52f57
     # https://github.com/moby/buildkit/releases/download/v0.11.3/buildkit-v0.11.3.darwin-arm64.tar.gz
@@ -330,7 +330,7 @@ buildkit_checksums:
     windows-amd64: sha256:5a7397940297b0eddf30ea314ba4ac5bd87fba028d1e139afc063a256eee9c0d
     # https://github.com/moby/buildkit/releases/download/v0.11.3/buildkit-v0.11.3.windows-arm64.tar.gz
     windows-arm64: sha256:0a02c2b336cdfa1dc633e1646ff9b276c233ba87b6506c812edc792d041535cc
-  '0.11.4':
+  "0.11.4":
     # https://github.com/moby/buildkit/releases/download/v0.11.4/buildkit-v0.11.4.darwin-amd64.tar.gz
     darwin-amd64: sha256:f4a98d540ca536eb91cac9e5300105c2a6279ae60d87008c058317963a02d397
     # https://github.com/moby/buildkit/releases/download/v0.11.4/buildkit-v0.11.4.darwin-arm64.tar.gz
@@ -351,7 +351,7 @@ buildkit_checksums:
     windows-amd64: sha256:15ee12c1d0ec08707dc503618a69eb6788547d328533c8c356ff5a9836027424
     # https://github.com/moby/buildkit/releases/download/v0.11.4/buildkit-v0.11.4.windows-arm64.tar.gz
     windows-arm64: sha256:068e197518fe3f5afb993674d67e72ac09fdb03933681b3dd3743dfa33b835c4
-  '0.11.5':
+  "0.11.5":
     # https://github.com/moby/buildkit/releases/download/v0.11.5/buildkit-v0.11.5.darwin-amd64.tar.gz
     darwin-amd64: sha256:8ba5ff9f7000015c140cc118ccda492d2da96b42c9db9c8139cb8b02acc56d72
     # https://github.com/moby/buildkit/releases/download/v0.11.5/buildkit-v0.11.5.darwin-arm64.tar.gz
@@ -372,7 +372,7 @@ buildkit_checksums:
     windows-amd64: sha256:71e2aee41c049cbe79ab3ed01aa5b89b288600de4bcf8c2a5e80e32f76762bee
     # https://github.com/moby/buildkit/releases/download/v0.11.5/buildkit-v0.11.5.windows-arm64.tar.gz
     windows-arm64: sha256:72b44b197e1819a71fcde55a39ff46d6550490b2b83f3fa9c9b14f555d858add
-  '0.12.3':
+  "0.12.3":
     # https://github.com/moby/buildkit/releases/download/v0.12.3/buildkit-v0.12.3.darwin-amd64.tar.gz
     darwin-amd64: sha256:69bdc457de9f0411f911dc58c0ff136c064a43131c828e44405547b399042b49
     # https://github.com/moby/buildkit/releases/download/v0.12.3/buildkit-v0.12.3.darwin-arm64.tar.gz
@@ -393,7 +393,7 @@ buildkit_checksums:
     windows-amd64: sha256:97a071d8e9e02a93e4cced8a00331a5fd39e945cbb41f8286ffbc0ea722ddaa3
     # https://github.com/moby/buildkit/releases/download/v0.12.3/buildkit-v0.12.3.windows-arm64.tar.gz
     windows-arm64: sha256:86da06dfa277114d041368188a3cc863db2d10e75b20417cb2996e7016ae25fd
-  '0.12.4':
+  "0.12.4":
     # https://github.com/moby/buildkit/releases/download/v0.12.4/buildkit-v0.12.4.darwin-amd64.tar.gz
     darwin-amd64: sha256:57d5d4e6075842dac8bf6cc86a792242678a16860172a2da91a7fcb8aad93d7a
     # https://github.com/moby/buildkit/releases/download/v0.12.4/buildkit-v0.12.4.darwin-arm64.tar.gz

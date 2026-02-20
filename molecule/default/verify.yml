@@ -9,4 +9,4 @@
 
     - name: Print buildctl --version
       ansible.builtin.debug:
-        msg: '{{ buildkit_test_output.stdout }}'
+        msg: "{{ buildkit_test_output.stdout }}"
