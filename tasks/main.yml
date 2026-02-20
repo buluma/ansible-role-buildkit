@@ -60,7 +60,7 @@
         path: "{{ buildkit_tmp_archive }}"
         state: absent
 
-- name: Linking executables in '{{ buildkit_bin_dir }}' to '{{ buildkit_install_dir }}'
+- name: Linking executables to '{{ buildkit_install_dir }}' from '{{ buildkit_bin_dir }}'
   become: true
   become_user: root
   with_items: "{{ buildkit_apps }}"
@@ -69,7 +69,7 @@
     dest: "{{ buildkit_link_dir }}/{{ item }}"
     state: link
 
-- name: Linking qemu executables in '{{ buildkit_bin_dir }}' to '{{ buildkit_install_dir }}'
+- name: Linking qemu executables to '{{ buildkit_install_dir }}' from '{{ buildkit_bin_dir }}'
   when: item != ansible_architecture
   with_items: "{{ buildkit_qemu_architectures }}"
   become: true

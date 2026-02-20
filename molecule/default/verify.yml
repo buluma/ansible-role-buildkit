@@ -6,6 +6,7 @@
     - name: Check buildkit version
       ansible.builtin.command: /usr/local/bin/buildctl --version
       register: buildkit_test_output
+      changed_when: false
 
     - name: Print buildctl --version
       ansible.builtin.debug:
