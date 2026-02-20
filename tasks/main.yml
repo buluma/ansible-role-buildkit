@@ -36,14 +36,14 @@
         url: "{{ buildkit_url }}"
         dest: "{{ buildkit_tmp_archive }}"
         checksum: "{{ buildkit_checksum }}"
-        mode: 0644
+        mode: "0644"
     - name: Mkdir -p '{{ buildkit_install_dir }}'
       become: true
       become_user: root
       ansible.builtin.file:
         path: "{{ buildkit_install_dir }}"
         state: directory
-        mode: 0755
+        mode: "0755"
     - name: Unarchive {{ buildkit_tmp_archive }}
       become: true
       become_user: root
