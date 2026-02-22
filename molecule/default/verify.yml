@@ -1,13 +1,11 @@
----
-- name: Verify
+- gather_facts: false
   hosts: all
-  gather_facts: false
+  name: Verify
   tasks:
-    - name: Check buildkit version
-      ansible.builtin.command: /usr/local/bin/buildctl --version
-      register: buildkit_test_output
-      changed_when: false
-
-    - name: Print buildctl --version
-      ansible.builtin.debug:
-        msg: "{{ buildkit_test_output.stdout }}"
+  - ansible.builtin.command: /usr/local/bin/buildctl --version
+    changed_when: false
+    name: Check buildkit version
+    register: buildkit_test_output
+  - ansible.builtin.debug:
+      msg: '{{ buildkit_test_output.stdout }}'
+    name: Print buildctl --version
