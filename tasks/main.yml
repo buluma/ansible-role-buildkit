@@ -18,34 +18,34 @@
 - name: Not buildkit_binary.stat.exists
   when: not buildkit_binary.stat.exists
   block:
-    - ansible.builtin.get_url:
+    - name: Downloading '{{ buildkit_url }}'...
+      ansible.builtin.get_url:
         checksum: "{{ buildkit_checksum }}"
         dest: "{{ buildkit_tmp_archive }}"
         mode: "0644"
         url: "{{ buildkit_url }}"
       become: true
       become_user: root
-      name: Downloading '{{ buildkit_url }}'...
-    - ansible.builtin.file:
+    - name: Mkdir -p '{{ buildkit_install_dir }}'
+      ansible.builtin.file:
         mode: "0755"
         path: "{{ buildkit_install_dir }}"
         state: directory
       become: true
       become_user: root
-      name: Mkdir -p '{{ buildkit_install_dir }}'
-    - ansible.builtin.unarchive:
+    - name: Unarchive {{ buildkit_tmp_archive }}
+      ansible.builtin.unarchive:
         creates: "{{ buildkit_bin_dir }}"
         dest: "{{ buildkit_install_dir }}"
         remote_src: true
         src: "{{ buildkit_tmp_archive }}"
       become: true
       become_user: root
-      name: Unarchive {{ buildkit_tmp_archive }}
   always:
-    - ansible.builtin.file:
+    - name: Rm -f {{ buildkit_tmp_archive }}
+      ansible.builtin.file:
         path: "{{ buildkit_tmp_archive }}"
         state: absent
-      name: Rm -f {{ buildkit_tmp_archive }}
       become: true
       become_user: root
 - name: Linking executables to '{{ buildkit_install_dir }}' from '{{ buildkit_bin_dir }}'

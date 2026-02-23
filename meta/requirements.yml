@@ -1,2 +1,2 @@
-- name: andrewrothstein.unarchivedeps
-  version: 3.0.1
+  - name: andrewrothstein.unarchivedeps
+    version: 3.0.1
