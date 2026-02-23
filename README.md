@@ -12,27 +12,27 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-  - gather_facts: true
-    hosts: all
-    name: Converge
-    tasks:
-      - ansible.builtin.include_role:
-          name: ansible-role-buildkit
-        name: Include ansible-role-buildkit
+- gather_facts: true
+  hosts: all
+  name: Converge
+  tasks:
+  - ansible.builtin.include_role:
+      name: ansible-role-buildkit
+    name: Include ansible-role-buildkit
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-buildkit/blob/master/molecule/default/prepare.yml):
 
 ```yaml
 ---
-  - become: true
-    gather_facts: false
-    hosts: all
-    name: Prepare
-    roles:
-      - role: buluma.bootstrap
-      - role: buluma.ca_certificates
-      - role: andrewrothstein.unarchivedeps
+- become: true
+  gather_facts: false
+  hosts: all
+  name: Prepare
+  roles:
+  - role: buluma.bootstrap
+  - role: buluma.ca_certificates
+  - role: andrewrothstein.unarchivedeps
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -44,9 +44,9 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 ```yaml
 ---
 buildkit_apps:
-  - buildctl
-  - buildkitd
-  - buildkit-runc
+- buildctl
+- buildkitd
+- buildkit-runc
 buildkit_arch_map:
   aarch64: arm64
   arm64: arm64
@@ -446,13 +446,13 @@ buildkit_checksums:
 buildkit_mirror: https://github.com/moby/buildkit/releases/download
 buildkit_parent_install_dir: /usr/local
 buildkit_qemu_architectures:
-  - aarch64
-  - x86_64
-  - arm
-  - i386
-  - ppc64le
-  - riscv64
-  - s390x
+- aarch64
+- x86_64
+- arm
+- i386
+- ppc64le
+- riscv64
+- s390x
 buildkit_ver: 0.12.4
 ```
 
