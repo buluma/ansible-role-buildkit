@@ -48,7 +48,7 @@
         state: absent
       become: true
       become_user: root
-- name: Linking executables to '{{ buildkit_install_dir }}' from '{{ buildkit_bin_dir }}'
+- name: Link executables
   ansible.builtin.file:
     dest: "{{ buildkit_link_dir }}/{{ item }}"
     src: "{{ buildkit_bin_dir }}/{{ item }}"
@@ -56,7 +56,7 @@
   become: true
   become_user: root
   with_items: "{{ buildkit_apps }}"
-- name: Linking qemu executables to '{{ buildkit_install_dir }}' from '{{ buildkit_bin_dir }}'
+- name: Link qemu executables
   ansible.builtin.file:
     dest: "{{ buildkit_link_dir }}/buildkit-qemu-{{ item }}"
     src: "{{ buildkit_bin_dir }}/buildkit-qemu-{{ item }}"
