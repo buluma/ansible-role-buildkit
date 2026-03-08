@@ -4,6 +4,6 @@
   hosts: all
   name: Prepare
   roles:
-  - role: buluma.bootstrap
-  - role: buluma.ca_certificates
-  - role: andrewrothstein.unarchivedeps
+    - role: buluma.bootstrap
+    - role: buluma.ca_certificates
+    - role: andrewrothstein.unarchivedeps
