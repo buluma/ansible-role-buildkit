@@ -12,13 +12,13 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-- gather_facts: true
+- name: Converge
   hosts: all
-  name: Converge
-  tasks:
-    - ansible.builtin.include_role:
-        name: ansible-role-buildkit
-      name: Include ansible-role-buildkit
+  become: true
+  gather_facts: true
+
+  roles:
+    - role: buluma.buildkit
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-buildkit/blob/master/molecule/default/prepare.yml):
@@ -259,7 +259,7 @@ buildkit_checksums:
     linux-ppc64le: sha256:1186cadd403d2da5c759de465ce6a1626f9f98bc83d320361dba55c4c749f23d
     linux-s390x: sha256:156bdc7282f07848257d464f39c0665334246ce7e57d82d02048f85883fa8018
     windows-amd64: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-buildkit_mirror: https://github.com/moby/buildkit/releases/download
+buildkit_mirror: "https://github.com/moby/buildkit/releases/download"
 buildkit_parent_install_dir: /usr/local
 buildkit_qemu_architectures:
   - aarch64
@@ -269,7 +269,7 @@ buildkit_qemu_architectures:
   - ppc64le
   - riscv64
   - s390x
-buildkit_ver: 0.12.4
+buildkit_ver: "0.12.4"
 ```
 
 ## [Requirements](#requirements)
@@ -321,3 +321,4 @@ If you find issues, please register them on [GitHub](https://github.com/buluma/a
 ## [Author Information](#author-information)
 
 [buluma](https://buluma.github.io/)
+
