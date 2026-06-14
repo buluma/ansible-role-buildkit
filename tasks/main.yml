@@ -3,9 +3,9 @@
   ansible.builtin.include_vars: "{{ item }}"
   with_first_found:
     - files:
-        - "{{ ansible_facts.distribution }}-{{ ansible_facts.distribution_release }}.yml"
-        - "{{ ansible_facts.distribution }}.yml"
-        - "{{ ansible_facts.os_family }}.yml"
+        - "{{ ansible_facts['distribution'] }}-{{ ansible_facts['distribution_release'] }}.yml"
+        - "{{ ansible_facts['distribution'] }}.yml"
+        - "{{ ansible_facts['os_family'] }}.yml"
       paths:
         - "{{ role_path }}/vars"
       skip: true
@@ -63,5 +63,5 @@
     state: link
   become: true
   become_user: root
-  when: item != ansible_facts.architecture
+  when: item != ansible_facts['architecture']
   with_items: "{{ buildkit_qemu_architectures }}"
