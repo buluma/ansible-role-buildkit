@@ -1,8 +1,7 @@
 ---
-- gather_facts: false
 - name: Verify
   hosts: all
-  name: Verify
+  gather_facts: false
   tasks:
     - ansible.builtin.command: /usr/local/bin/buildctl --version
       changed_when: false
