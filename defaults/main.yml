@@ -11,6 +11,17 @@ buildkit_arch_map:
   s390x: s390x
   x86_64: amd64
 buildkit_checksums:
+  0.34.1:
+    darwin-amd64: sha256:c3d951356ade9e721f9e7b852eda5b6e0c57abd06e3bb697d3a7c015b114f7ae
+    darwin-arm64: sha256:ea6f38837b556209f5905fc1971ea9897b45e019438a3ab4c2614b9f40554601
+    linux-amd64: sha256:a59539daf547fe0958efe2d07e41c0a6944e1112a66d7e519ec1cf5b673ef15b
+    linux-arm-v7: sha256:e83410cedbc6277ee8536dff79d0076c614f2e99da9ca0cf2e579d586dba9eba
+    linux-arm64: sha256:c8c97b84baf89dfe0ea85063ac24ad88eb909979ea476ce3ef9e8e11e60ebef8
+    linux-ppc64le: sha256:e9fa212155ddebac1911d1aee969c559e21e850b408aaf8ba2c13028e5aa27c1
+    linux-riscv64: sha256:0c87b1784c8a6e6edcb5e2fd5f1c347beadf572c68842e1b287ad41ccd6a2ea8
+    linux-s390x: sha256:eb7d1ce013f08d3d6194e494fc5c2eaa0425034b5a2cce30a0b5790d3b00fdfd
+    windows-amd64: sha256:943a70e1e95e07b3c0ae776a964866574bb8a6533176377d7084a3999298ddd3
+    windows-arm64: sha256:48bff9095a88ef9f8be52929502b982ea1dbdd0653ca1bd442575a2c3dd5158d
   0.10.0:
     darwin-amd64: sha256:f80a3726d1ad662e573b9eab5a00cb82b07ab44ea5ba871a755f64fff41fe9c5
     darwin-arm64: sha256:1729c99674e319d2501ae9df541532061e9923d470c49415181231c2f626102f
@@ -225,4 +236,4 @@ buildkit_qemu_architectures:
   - ppc64le
   - riscv64
   - s390x
-buildkit_ver: "0.12.4"
+buildkit_ver: "0.34.1"
