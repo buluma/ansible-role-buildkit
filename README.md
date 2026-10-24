@@ -299,7 +299,7 @@ buildkit_qemu_architectures:
   - ppc64le
   - riscv64
   - s390x
-buildkit_ver: "0.12.4"
+buildkit_ver: "0.34.1"
 ```
 
 ## [Requirements](#requirements)
